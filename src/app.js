@@ -1,4 +1,4 @@
-var agungApp = angular.module('agungApp', ['ngRoute']);
+var agungApp = angular.module('agungApp', ['ngRoute', 'ngAnimate']);
 
 agungApp.config(function($routeProvider, $locationProvider){
     $routeProvider.when('/', {
@@ -13,4 +13,12 @@ agungApp.config(function($routeProvider, $locationProvider){
         redirectTo: '/'
     });
 
+});
+
+agungApp.controller('homeController', function($scope) {
+    $scope.pageClass = 'page-home';
+});
+
+agungApp.controller('profilController', function($scope) {
+    $scope.pageClass = 'page-profil';
 });
