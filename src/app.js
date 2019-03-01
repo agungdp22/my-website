@@ -1,24 +1,20 @@
-var agungApp = angular.module('agungApp', ['ngRoute', 'ngAnimate']);
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-agungApp.config(function($routeProvider, $locationProvider){
-    $routeProvider.when('/', {
-        controller: 'homeController',
-        templateUrl: 'template/home.html'
-    })
-    .when('/profil', {
-        controller: 'profilController',
-        templateUrl: 'template/profil.html'
-    })
-    .otherwise({
-        redirectTo: '/'
-    });
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Under Construction
+          </p>
+        </header>
+      </div>
+    );
+  }
+}
 
-});
-
-agungApp.controller('homeController', function($scope) {
-    $scope.pageClass = 'page-home';
-});
-
-agungApp.controller('profilController', function($scope) {
-    $scope.pageClass = 'page-profil';
-});
+export default App;
