@@ -1,12 +1,25 @@
 import {PureComponent} from "react";
 
 export default class Header extends PureComponent {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            apiUrl: process.env.API
+        }
+    }
+
     render() {
-        return(
-            <div>
+        const {
+            apiUrl
+        } = this.state;
+        console.log(apiUrl)
+
+        return (
+            <div className="content">
                 Hello, my name is Agung Dwi Prasetyo <br />
-                This page is under construction <br />
-                See my latest resume => <a href = "/resume" target="blank">Resume</a>
+                This page is still under development <br />
+                See my GitHub report <a href="https://sourcerer.io/agungdwiprasetyo" target="blank">GitHub</a>
             </div>
         );
     }

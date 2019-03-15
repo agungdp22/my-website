@@ -20,7 +20,7 @@ export default class Layout extends PureComponent {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
                 <link rel="manifest" href="/static/manifest.webmanifest" />
-                <meta name="theme-color" content="#ff6600" />
+                <meta name="theme-color" content="#00e7aa" />
                 <link rel="apple-touch-icon" href="https://storage.googleapis.com/agungdp/static/agungdwiprasetyo.com/code.png" />
                 <meta name="apple-mobile-web-app-title" content="Agung Dwi Prasetyo" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
