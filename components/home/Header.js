@@ -17,9 +17,9 @@ export default class Header extends PureComponent {
 
         return (
             <div className="content">
-                Hello, my name is Agung Dwi Prasetyo <br />
-                This page is still under development <br />
-                See my GitHub report <a href="https://sourcerer.io/agungdwiprasetyo" target="blank">GitHub</a>
+                <div>Hello, my name is Agung Dwi Prasetyo</div>
+                <div>This page is still under development</div>
+                <div>See my <a href="https://sourcerer.io/agungdwiprasetyo" target="blank">GitHub report</a></div>
             </div>
         );
     }

@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import Header from "../components/home/Header";
+import Footer from "../components/home/Footer";
 
 export default class extends React.Component {
     constructor(props) {
@@ -33,6 +34,7 @@ export default class extends React.Component {
                 </Layout>
 
                 <Header />
+                <Footer />
             </main>
         )
     }
