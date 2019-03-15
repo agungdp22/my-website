@@ -1,25 +1,45 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "react-scripts": "2.1.5"
-  },
+  "name": "agungdwiprasetyo.com",
+  "version": "1.0.0",
+  "description": "My official website",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next -p 5000",
+    "build": "next build && next export -o dist",
+    "start": "next start"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agungdwiprasetyo/agungdwiprasetyo.com.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "Agung Dwi Prasetyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agungdwiprasetyo/agungdwiprasetyo.com/issues"
+  },
+  "homepage": "https://github.com/agungdwiprasetyo/agungdwiprasetyo.com#readme",
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "es6-promise": "^4.2.5",
+    "express": "^4.16.3",
+    "isomorphic-fetch": "^2.2.1",
+    "js-cookie": "^2.2.0",
+    "next": "^7.0.1",
+    "node-sass": "^4.10.0",
+    "nprogress": "^0.2.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-js-pagination": "^3.0.2",
+    "responsive-slides": "^1.55.0",
+    "smooth-scroll": "^14.2.1",
+    "sw-precache-webpack-plugin": "^0.11.5",
+    "sweetalert2-react": "^0.7.2",
+    "zenscroll": "^4.0.2"
+  },
+  "devDependencies": {
+    "prop-types": "^15.6.0"
+  },
+  "engines": {
+    "node": "^9.2.0"
+  }
 }
