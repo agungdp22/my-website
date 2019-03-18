@@ -26,7 +26,7 @@ export default class Footer extends PureComponent {
                             <a href="https://twitter.com/agungdwprasetyo" target="_blank"><i className="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
-                    <p>© {(new Date()).getFullYear()} Agung Dwi Prasetyo | Software Engineer</p>
+                    <p>© {(new Date()).getFullYear()} Agung Dwi Prasetyo | Software Engineer & Machine Learning Enthusiast</p>
                 </div>
             </footer>
         );

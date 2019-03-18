@@ -16,10 +16,12 @@ export default class Header extends PureComponent {
         console.log(apiUrl)
 
         return (
-            <div className="content">
-                <div>Hello, my name is Agung Dwi Prasetyo</div>
-                <div>This page is still under development</div>
-                <div>See my <a href="https://sourcerer.io/agungdwiprasetyo" target="blank">GitHub report</a></div>
+            <div className="container">
+                <div className="content">
+                    <div>Hello, my name is Agung Dwi Prasetyo</div>
+                    <div>This page is still under development</div>
+                    <div>See my <a href="https://sourcerer.io/agungdwiprasetyo" target="blank">GitHub resume</a></div>
+                </div>
             </div>
         );
     }

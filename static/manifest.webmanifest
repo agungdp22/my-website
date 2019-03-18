@@ -4,7 +4,7 @@
     "start_url": "/",
     "display": "standalone",
     "background_color": "#f0f0f0",
-    "theme_color": "#00e7aa",
+    "theme_color": "#337ab7",
     "description": "Agung Dwi Prasetyo",
     "icons": [{
       "src": "https://agungdp.storage.googleapis.com/wedding/static/iconheader.png",

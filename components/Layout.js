@@ -7,7 +7,7 @@ export default class Layout extends PureComponent {
     render() {
         const { title, description } = this.props;
 
-        return(
+        return (
             <Head>
                 <title>{title}</title>
                 <meta name="description" content={description} />
@@ -22,7 +22,7 @@ export default class Layout extends PureComponent {
                 <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
 
                 <link rel="manifest" href="/static/manifest.webmanifest" />
-                <meta name="theme-color" content="#00e7aa" />
+                <meta name="theme-color" content="#337ab7" />
                 <link rel="apple-touch-icon" href="https://storage.googleapis.com/agungdp/static/agungdwiprasetyo.com/code.png" />
                 <meta name="apple-mobile-web-app-title" content="Agung Dwi Prasetyo" />
                 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
