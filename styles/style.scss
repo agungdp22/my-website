@@ -1,6 +1,22 @@
 @import "footer";
+@import '~bootstrap/scss/bootstrap.scss';
 
 body {
+    background-color: #ffffff;
+    height: auto;
+    background-image: -webkit-gradient(
+        linear,
+        color-stop(0, rgba(255, 255, 255, 0)),
+        color-stop(#ffffff)
+      ),
+      url(https://storage.googleapis.com/agungdp/static/agungdwiprasetyo.com/bg.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0) 0, #ffffff 100%),
+      url(https://storage.googleapis.com/agungdp/static/agungdwiprasetyo.com/bg.png);
+    background-repeat: repeat;
+    .bt-container {
+      overflow: initial;
+    }
+
     margin: 0;
     font-family: Roboto Mono, Roboto, Monospace;
     text-align: center;

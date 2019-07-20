@@ -23,7 +23,7 @@ export default class Footer extends PureComponent {
                             <a href="https://web.facebook.com/agungdwip22" target="_blank"><i className="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/agungdwprasetyo" target="_blank"><i className="fa fa-twitter fa-fw fa-3x"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=6287886970773" target="_blank"><i className="fa fa-whatsapp fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <p>© {(new Date()).getFullYear()} Agung Dwi Prasetyo | Software Engineer & Machine Learning Enthusiast</p>
