@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import Header from "../components/home/Header";
+import Skill from "../components/home/Skill";
 import Footer from "../components/home/Footer";
 
 export default class extends React.Component {
@@ -32,8 +33,9 @@ export default class extends React.Component {
                     title={'Agung Dwi Prasetyo'} 
                     description={'Agung Dwi Prasetyo Official Website'}>
                 </Layout>
-
+            
                 <Header />
+                <Skill />
                 <Footer />
             </main>
         )
