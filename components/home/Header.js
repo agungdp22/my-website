@@ -1,4 +1,5 @@
 import {PureComponent} from "react";
+import API from "../../helper/helper";
 
 export default class Header extends PureComponent {
     constructor(props) {
@@ -11,17 +12,13 @@ export default class Header extends PureComponent {
 
     render() {
         const {
-            apiUrl
-        } = this.state;
-        console.log(apiUrl)
+            content
+        } = this.props;
 
         return (
             <div className="container">
                 <div className="content">
-                    <div>Hello, my name is Agung Dwi Prasetyo</div>
-                    <div>This page is still under development</div>
-                    <div>See my <a href="https://sourcerer.io/agungdwiprasetyo" target="blank">GitHub resume</a></div>
-                    <div>Or my <a href="/resume">Curriculum Vitae</a></div>
+                <div dangerouslySetInnerHTML={ { __html: content } }></div>
                 </div>
             </div>
         );
