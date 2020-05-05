@@ -6,3 +6,4 @@ package-lock.json
 dist/
 server.js
 *.tar.gz
+.env
