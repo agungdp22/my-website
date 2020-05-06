@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Software Engineer",
+    "company": "Bhinneka.com",
+    "companyLogo": "https://storage.googleapis.com/agungdp/static/logo/bhinneka.png",
+    "link": "https://bhinneka.com",
+    "start": "2018-07-30T00:00:00.000Z",
+    "end": null,
+    "featured": true
+  },
+  {
+    "title": "Software Engineer",
+    "company": "AIMSIS",
+    "companyLogo": "https://storage.googleapis.com/agungdp/static/logo/aimsis.jpg",
+    "link": "https://www.aimsis.com",
+    "start": "2017-05-15T00:00:00.000Z",
+    "end": "2018-07-27T00:00:00.000Z",
+    "featured": true
+  },
+  {
+    "title": "Teaching Assistant",
+    "company": "IPB University",
+    "companyLogo": "https://dik.ipb.ac.id/wp-content/uploads/2018/05/Logo-IPB-baru-1024x1024.png",
+    "link": null,
+    "start": "2015-09-01T00:00:00.000Z",
+    "end": "2017-05-31T00:00:00.000Z",
+    "featured": true
+  },
+  {
+    "title": "Fullstack Developer Internship",
+    "company": "Southeast Asian Regional Centre for Tropical Biology",
+    "companyLogo": "https://storage.googleapis.com/agungdp/static/logo/biotrop.jpg",
+    "link": null,
+    "start": "2016-07-01T00:00:00.000Z",
+    "end": "2016-08-31T00:00:00.000Z",
+    "featured": false
+  }
+]

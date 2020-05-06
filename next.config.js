@@ -1,34 +1,25 @@
-require('dotenv').config()
+const withBundleAnalyzer = require("@zeit/next-bundle-analyzer");
 
-const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
-const path = require('path')
-const Dotenv = require('dotenv-webpack')
+const assetPrefix =  "";
 
-module.exports = {
-  webpack: (config) => {
-    config.plugins.push(
-      new SWPrecacheWebpackPlugin({
-        verbose: true,
-        staticFileGlobsIgnorePatterns: [/\.next\//],
-        runtimeCaching: [
-          {
-            handler: 'networkFirst',
-            urlPattern: /^https?.*/
-          }
-        ]
-      })
-    )
-
-    config.plugins.push(
-        new Dotenv({
-            path: path.join(__dirname, '.env'),
-            systemvars: true
-        })
-    )
-
-    return config
-  }
-}
-
-const withSass = require('@zeit/next-sass')
-module.exports = withSass()
+module.exports = withBundleAnalyzer({
+  assetPrefix,
+  analyzeServer: ["server", "both"].includes(process.env.BUNDLE_ANALYZE),
+  analyzeBrowser: ["browser", "both"].includes(process.env.BUNDLE_ANALYZE),
+  bundleAnalyzerConfig: {
+    server: {
+      analyzerMode: "static",
+      reportFilename: "../bundles/server.html",
+    },
+    browser: {
+      analyzerMode: "static",
+      reportFilename: "../bundles/client.html",
+    },
+  },
+  env: {
+    ASSET_PREFIX: assetPrefix,
+  },
+  exportPathMap: () => ({
+    "/": { page: "/" },
+  }),
+});
