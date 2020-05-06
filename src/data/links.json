@@ -1,0 +1,53 @@
+[
+  {
+    "title": "E-mail",
+    "url": "mailto:agungdwiprasetyo22@gmail.com",
+    "icon": "envelope",
+    "color":"#D44638"
+  },
+  {
+    "title": "Facebook",
+    "url": "https://web.facebook.com/agungdwip22",
+    "icon": [
+      "fab",
+      "facebook"
+    ],
+    "color": "#3b5998"
+  },
+  {
+    "title": "GitHub",
+    "url": "https://github.com/agungdwiprasetyo",
+    "icon": [
+      "fab",
+      "github"
+    ],
+    "color": "#333"
+  },
+  {
+    "title": "LinkedIn",
+    "url": "https://www.linkedin.com/in/agung-dwi-prasetyo",
+    "icon": [
+      "fab",
+      "linkedin"
+    ],
+    "color": "#0077b5"
+  },
+  {
+    "title": "Instagram",
+    "url": "https://www.instagram.com/agungdp22",
+    "icon": [
+      "fab",
+      "instagram"
+    ],
+    "color": "#E1306C"
+  },
+  {
+    "title": "Twitter",
+    "url": "https://twitter.com/agungdwprasetyo",
+    "icon": [
+      "fab",
+      "twitter"
+    ],
+    "color": "#1da1f2"
+  }
+]
