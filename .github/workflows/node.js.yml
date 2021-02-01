@@ -26,3 +26,16 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
     - run: npm run export
+    - run: tar czf homepage.tar.gz out
+
+    - name: Setup GCP
+      uses: google-github-actions/github-actions/setup-gcloud@master
+      with:
+        service_account_key: ${{ secrets.GCS_SA_KEY }}
+        project_id: ${{ secrets.GCS_PROJECT }}
+        export_default_credentials: true
+      
+    - name: Deploy
+      run: |
+        gsutil cp homepage.tar.gz gs://agungdp/static/reactbuild/homepage.tar.gz
+        gsutil acl ch -u AllUsers:R gs://agungdp/static/reactbuild/homepage.tar.gz
