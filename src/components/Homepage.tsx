@@ -11,12 +11,10 @@ const styles = createStyles({
   background: {
     position: "relative",
     backgroundColor: "#ffffff",
-    // backgroundImage: `url(https://storage.googleapis.com/agungdp/static/agungdwiprasetyo.com/bg.png)`,
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundRepeat: "repeat",
     height: "100vh",
-    fontFamily: "Roboto Mono, Roboto, Monospace",
   },
   titleWrapper: {
     position: "absolute",

@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "name": "C++",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/cpp.png",
+        "percentage": 0
+    },
+    {
+        "id": 2,
+        "name": "Docker",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/docker.png",
+        "percentage": 0
+    },
+    {
+        "id": 3,
+        "name": "Golang",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/golang.png",
+        "percentage": 0
+    },
+    {
+        "id": 4,
+        "name": "GraphQL",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/graphql.png",
+        "percentage": 0
+    },
+    {
+        "id": 5,
+        "name": "GRPC",
+        "height": 35,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/grpc.png",
+        "percentage": 0
+    },
+    {
+        "id": 6,
+        "name": "Kafka",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/kafka.png",
+        "percentage": 0
+    },
+    {
+        "id": 7,
+        "name": "MongoDB",
+        "height": 50,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/mongodb.png",
+        "percentage": 0
+    },
+    {
+        "id": 8,
+        "name": "Node.js",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/nodejs.png",
+        "percentage": 0
+    },
+    {
+        "id": 9,
+        "name": "Postgres",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/postgres.png",
+        "percentage": 0
+    },
+    {
+        "id": 10,
+        "name": "Python",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/python.png",
+        "percentage": 0
+    },
+    {
+        "id": 11,
+        "name": "Raspberry Pi",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/raspi.png",
+        "percentage": 0
+    },
+    {
+        "id": 12,
+        "name": "Arduino",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/arduino.png",
+        "percentage": 0
+    },
+    {
+        "id": 13,
+        "name": "React js",
+        "height": 45,
+        "image": "https://storage.googleapis.com/agungdp/static/logo/react.png",
+        "percentage": 0
+    }
+]

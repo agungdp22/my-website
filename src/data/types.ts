@@ -9,13 +9,11 @@ export interface Project {
   id: number;
   title: string;
   image: string | null;
-  start: Date; // TODO improve
+  start: Date;
   end: Date | null;
   tags: string[];
-  featured: boolean;
   description: string;
-  description_ja?: string;
-  links: object; // TODO improve
+  links: object;
 }
 
 export interface Work {
@@ -27,4 +25,12 @@ export interface Work {
   start: Date;
   end: Date | null;
   featured: boolean;
+}
+
+export interface Skill {
+  id: number;
+  name: string;
+  image: string;
+  height: number;
+  percentage: number;
 }

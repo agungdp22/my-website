@@ -10,19 +10,13 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import { Work } from "../data/types";
 
-// const styles = ({ spacing }: Theme) => createStyles({
-//   logo: {
-//     margin: spacing(2)
-//   },
-// });
-
 const WorkExperienceItem = ({ work }: { work: Work }) => (
   // @ts-ignore
   <ListItem button component="a" href={work.link} target="_blank" rel="noopener">
     {work.companyLogo ? <img style={{marginRight:"20px"}} src={work.companyLogo} height="50" title={work.company} /> : ""}
     <ListItemText
       primary={`${work.title} of ${work.company}`}
-      secondary={`${format(work.start, "MMM yyyy")}–${work.end ? format(work.end, "MMM yyyy") : "Present"}`}
+      secondary={`${format(work?.start, "MMM yyyy")}–${work.end ? format(work.end, "MMM yyyy") : "Present"}`}
     />
   </ListItem>
 );

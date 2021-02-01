@@ -2,7 +2,7 @@
 import parseISO from "date-fns/parseISO";
 
 import {
-  Link, Project, Work,
+  Link, Project, Skill, Work,
 } from "./types";
 import rawLinks from "./links.json";
 import rawProjects from "./projects.json";
@@ -17,7 +17,7 @@ export const projects: Project[] = rawProjects.map((t, i) => Object.assign(t, {
   end: t.end ? parseISO(t.end) : null,
 }));
 
-export const skills: string[] = rawSkills;
+export const skills: Skill[] = rawSkills;
 
 export const works: Work[] = rawWorks.map((w, i) => {
   const start = parseISO(w.start);

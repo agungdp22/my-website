@@ -4,6 +4,7 @@ import React from "react";
 import {
   createStyles, Theme, WithStyles, withStyles,
 } from "@material-ui/core";
+import { Skill } from "../data/types";
 
 const styles = ({ spacing }: Theme) => createStyles({
   root: {
@@ -19,24 +20,12 @@ const styles = ({ spacing }: Theme) => createStyles({
 });
 
 interface Props extends WithStyles<typeof styles> {
-  skills: string[];
+  skills: Skill[];
 }
 
-const Skills = ({ classes }: Props) => (
+const Skills = ({ classes, skills }: Props) => (
   <div className={classes.root}>
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/cpp.png" title="C++" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/docker.png" title="Docker" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/golang.png" title="Golang" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/graphql.png" title="GraphQL" />
-    <img height="35" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/grpc.png" title="GRPC" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/kafka.png" title="Apache Kafka" />
-    <img height="50" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/mongodb.png" title="MongoDB" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/nodejs.png" title="Node js" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/postgres.png" title="Postgres" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/python.png" title="Python" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/raspi.png" title="Raspberry Pi" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/arduino.png" title="Arduino" />
-    <img height="45" className={classes.chip} src="https://storage.googleapis.com/agungdp/static/logo/react.png" title="React js" />
+    { skills.map((s) => <img height={s.height} className={classes.chip} src={s.image} title={s.name} />) }
   </div>
 );
 

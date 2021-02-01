@@ -18,9 +18,6 @@ import {
 } from "../src/data";
 
 const styles = ({ spacing }: Theme) => createStyles({
-  root: {
-    fontFamily: "Roboto Mono, Roboto, Monospace",
-  },
   section: {
     paddingBottom: spacing(3),
     paddingTop: spacing(3),
@@ -35,7 +32,7 @@ const styles = ({ spacing }: Theme) => createStyles({
 });
 
 const Index = ({ classes }: WithStyles<typeof styles>) => (
-  <div className={classes.root}>
+  <div>
     <Homepage />
     <GridContainer>
       <Grid item xs={12} className={classes.section}>
