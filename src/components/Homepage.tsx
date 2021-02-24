@@ -35,6 +35,12 @@ const styles = createStyles({
       fontSize: 20,
     },
   },
+  titleContent: {
+    color: "#212529",
+    "@media (min-width: 600px)": {
+      fontSize: 15,
+    },
+  },
   buttonWrapper: {
     position: "absolute",
     textAlign: "center",
@@ -63,6 +69,9 @@ const Homepage = ({ classes }: WithStyles<typeof styles>) => {
             </div>
             <div className={classes.titleHeader}>
               Open Source Enthusiast
+            </div>
+            <div className={classes.titleContent}>
+              Download my <a href="https://storage.googleapis.com/agungdp/resume.pdf">resume</a>
             </div>
           </div>
         </div>
